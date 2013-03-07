@@ -1,0 +1,27 @@
+/*
+** my_putstr.c for my_pustr.c in /afs/epitech.net/users/all/debas_e/rendu/pis**cine/Jour_04
+**
+** Made by etienne debas
+** Login   <debas_e@epitech.net>
+**
+** Started on  Thu Oct  4 14:23:53 2012 etienne debas
+** Last update Thu Mar  7 14:49:55 2013 etienne debas
+*/
+
+int		my_putstr(char *str, int fd)
+{
+  write(fd, str, my_strlen(str));
+}
+
+int		my_putstr2(char *str1, char *str2, int fd)
+{
+  my_putstr(str1, fd);
+  my_putstr(str2, fd);
+}
+
+int		my_putstr3(char *str1, char *str2, char *str3, int fd)
+{
+  my_putstr(str1, fd);
+  my_putstr(str2, fd);
+  my_putstr(str3, fd);
+}
